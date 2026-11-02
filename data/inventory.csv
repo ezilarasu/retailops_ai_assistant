@@ -1,0 +1,8 @@
+store_id,sku,product_name,category,on_hand,reorder_point,vendor_id
+102,DENIM-4421,Classic Straight Jeans,Denim,8,20,V001
+102,TEE-1188,Organic Cotton Tee,Tops,45,25,V002
+102,JKT-7781,Lightweight Utility Jacket,Outerwear,3,10,V003
+205,DENIM-4421,Classic Straight Jeans,Denim,31,20,V001
+205,SHOE-9001,Canvas Sneaker,Shoes,6,15,V004
+310,BAG-2209,Everyday Tote Bag,Accessories,12,10,V005
+310,JKT-7781,Lightweight Utility Jacket,Outerwear,2,10,V003

@@ -1,0 +1,18 @@
+RetailOps Store Operations SOP
+
+Store opening checklist:
+1. Disable alarm.
+2. Verify POS terminals are online.
+3. Count opening cash drawer.
+4. Inspect fitting rooms.
+5. Confirm emergency exits are clear.
+6. Review daily staffing plan.
+
+Inventory mismatch process:
+If physical inventory does not match system inventory, the associate must recount the item, check recent transfers, review damaged goods logs, and notify the store operations manager.
+
+Customer escalation process:
+If a customer becomes upset, the associate should remain calm, listen actively, apologize for the inconvenience, and involve the manager on duty if the issue cannot be resolved within 5 minutes.
+
+POS outage process:
+If POS systems are offline for more than 10 minutes, the manager must contact IT support, open an incident ticket, and switch to manual transaction logging if approved.

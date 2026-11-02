@@ -1,0 +1,52 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.Python
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Testing / caching
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Vector stores / embeddings / large data artifacts
+vectorstore/
+*.faiss
+*.index
+chroma/
+*.sqlite3
+
+# LangSmith / local tracing artifacts
+.langsmith/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# Local Claude Code settings
+.claude/settings.local.json

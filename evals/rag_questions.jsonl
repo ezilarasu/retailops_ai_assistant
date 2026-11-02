@@ -1,0 +1,5 @@
+{"question":"How many vacation days do full-time store employees receive?","expected_answer":"18 paid vacation days","expected_source":"hr_policy.txt"}
+{"question":"Can store associates work remotely?","expected_answer":"Remote work is not available for store associates","expected_source":"hr_policy.txt"}
+{"question":"How long do customers have to return online orders?","expected_answer":"30 days of delivery","expected_source":"returns_refunds_policy.txt"}
+{"question":"What should a manager do if POS systems are offline for more than 10 minutes?","expected_answer":"contact IT support, open an incident ticket, and switch to manual transaction logging if approved","expected_source":"store_operations_sop.txt"}
+{"question":"What does P1 mean for incidents?","expected_answer":"full store outage or payment processing failure","expected_source":"it_support_kb.txt"}

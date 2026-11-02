@@ -1,0 +1,60 @@
+{
+  "timestamp": "2026-06-08T20:32:36.687096",
+  "model": "llama-3.3-70b-versatile",
+  "document_version": "2026-06-08-v1",
+  "total": 5,
+  "passed": 4,
+  "score": 0.8,
+  "details": [
+    {
+      "question": "How many vacation days do full-time store employees receive?",
+      "success": true,
+      "expected_answer": "18 paid vacation days",
+      "actual_answer": "18 paid vacation days per year after completing 90 days of employment",
+      "expected_source": "hr_policy.txt",
+      "actual_sources": [
+        "data/hr_policy.txt"
+      ]
+    },
+    {
+      "question": "Can store associates work remotely?",
+      "success": false,
+      "expected_answer": "Remote work is not available for store associates",
+      "actual_answer": "No, store associates cannot work remotely because their roles require physical store presence.",
+      "expected_source": "hr_policy.txt",
+      "actual_sources": [
+        "data/hr_policy.txt"
+      ]
+    },
+    {
+      "question": "How long do customers have to return online orders?",
+      "success": true,
+      "expected_answer": "30 days of delivery",
+      "actual_answer": "30 days of delivery with proof of purchase",
+      "expected_source": "returns_refunds_policy.txt",
+      "actual_sources": [
+        "data/returns_refunds_policy.txt"
+      ]
+    },
+    {
+      "question": "What should a manager do if POS systems are offline for more than 10 minutes?",
+      "success": true,
+      "expected_answer": "contact IT support, open an incident ticket, and switch to manual transaction logging if approved",
+      "actual_answer": "The manager must contact IT support, open an incident ticket, and switch to manual transaction logging if approved.",
+      "expected_source": "store_operations_sop.txt",
+      "actual_sources": [
+        "data/store_operations_sop.txt"
+      ]
+    },
+    {
+      "question": "What does P1 mean for incidents?",
+      "success": true,
+      "expected_answer": "full store outage or payment processing failure",
+      "actual_answer": "P1 means full store outage or payment processing failure.",
+      "expected_source": "it_support_kb.txt",
+      "actual_sources": [
+        "data/it_support_kb.txt"
+      ]
+    }
+  ]
+}

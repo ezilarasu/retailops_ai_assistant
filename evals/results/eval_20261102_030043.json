@@ -1,0 +1,128 @@
+{
+  "timestamp": "2026-11-02T03:00:43.010558",
+  "model": "openai/gpt-oss-20b",
+  "document_version": "2026-06-08-v1",
+  "retrieval_config": {
+    "enable_semantic_chunking": true,
+    "enable_reranking": true,
+    "enable_multi_query": true,
+    "retrieval_k": 2,
+    "chunk_size": 300,
+    "chunk_overlap": 50,
+    "vectorstore_dir": "vectorstore/chroma"
+  },
+  "total": 5,
+  "passed": 5,
+  "score": 1.0,
+  "metrics": {
+    "total": 5,
+    "passed": 5,
+    "pass_rate": 1.0,
+    "source_accuracy": 1.0,
+    "judge_correct_rate": 1.0,
+    "judge_grounded_rate": 1.0,
+    "judge_complete_rate": 1.0
+  },
+  "details": [
+    {
+      "question": "How many vacation days do full-time store employees receive?",
+      "success": true,
+      "expected_answer": "18 paid vacation days",
+      "actual_answer": "Full\u2011time store employees receive 18 paid vacation days per year after completing 90 days of employment.",
+      "expected_source": "hr_policy.txt",
+      "actual_sources": [
+        "data/hr_policy.txt"
+      ],
+      "deterministic_checks": {
+        "answer_match": true,
+        "source_match": true
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": true,
+        "explanation": "The assistant correctly states 18 paid vacation days, matching the expected answer. It adds a non\u2011contradictory detail about the 90\u2011day eligibility period, which does not affect correctness or completeness. The answer is grounded in the provided source."
+      }
+    },
+    {
+      "question": "Can store associates work remotely?",
+      "success": true,
+      "expected_answer": "Remote work is not available for store associates",
+      "actual_answer": "No, store associates cannot work remotely. The HR policy states that remote work is not available for store associates, cashiers, stockroom associates, or store managers because these roles require physical store presence.",
+      "expected_source": "hr_policy.txt",
+      "actual_sources": [
+        "data/hr_policy.txt"
+      ],
+      "deterministic_checks": {
+        "answer_match": true,
+        "source_match": true
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": true,
+        "explanation": "The assistant\u2019s answer correctly states that remote work is not available for store associates, matching the expected answer. It also provides additional context from the HR policy, which is grounded in the provided source. The answer is complete and accurate."
+      }
+    },
+    {
+      "question": "How long do customers have to return online orders?",
+      "success": true,
+      "expected_answer": "30 days of delivery",
+      "actual_answer": "Customers have 30 days to return online orders after delivery, provided they have proof of purchase.",
+      "expected_source": "returns_refunds_policy.txt",
+      "actual_sources": [
+        "data/returns_refunds_policy.txt"
+      ],
+      "deterministic_checks": {
+        "answer_match": false,
+        "source_match": true
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": true,
+        "explanation": "The assistant\u2019s answer states 30 days after delivery, matching the expected answer. It adds a proof\u2011of\u2011purchase requirement, which is not contradictory and is likely part of the policy. No unsupported claims are made."
+      }
+    },
+    {
+      "question": "What should a manager do if POS systems are offline for more than 10 minutes?",
+      "success": true,
+      "expected_answer": "contact IT support, open an incident ticket, and switch to manual transaction logging if approved",
+      "actual_answer": "If POS systems are offline for more than 10 minutes, the manager must contact IT support, open an incident ticket, and switch to manual transaction logging if approved.",
+      "expected_source": "store_operations_sop.txt",
+      "actual_sources": [
+        "data/store_operations_sop.txt"
+      ],
+      "deterministic_checks": {
+        "answer_match": true,
+        "source_match": true
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": true,
+        "explanation": "The assistant\u2019s response exactly matches the expected answer, contains no additional unsupported information, and includes all required steps."
+      }
+    },
+    {
+      "question": "What does P1 mean for incidents?",
+      "success": true,
+      "expected_answer": "full store outage or payment processing failure",
+      "actual_answer": "P1 means a full store outage or a payment processing failure.",
+      "expected_source": "it_support_kb.txt",
+      "actual_sources": [
+        "data/it_support_kb.txt"
+      ],
+      "deterministic_checks": {
+        "answer_match": false,
+        "source_match": true
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": true,
+        "explanation": "The assistant\u2019s answer matches the expected answer exactly, contains no unsupported information, and includes all key details."
+      }
+    }
+  ]
+}

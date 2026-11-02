@@ -1,0 +1,20 @@
+RetailOps IT Support Knowledge Base
+
+POS terminal frozen:
+Restart the terminal. If the issue persists, disconnect power for 30 seconds and reboot. If still unresolved, create a P1 incident.
+
+Password reset:
+Employees should use the self-service identity portal. Managers cannot reset passwords directly.
+
+Wi-Fi outage:
+Check whether back-office devices are also offline. Restart the store router only after approval from IT support.
+
+Scanner not working:
+Replace batteries, re-pair the scanner with the POS terminal, and test using a known SKU.
+
+Incident priority:
+P1 means full store outage or payment processing failure.
+P2 means partial outage affecting some terminals.
+P3 means single-device issue or non-urgent request.
+
+For P1 incidents, managers must notify IT support immediately and include the store ID, device ID, and timestamp in the incident ticket.
