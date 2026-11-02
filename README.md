@@ -175,6 +175,7 @@ tests/          46 pytest tests: RAG, router, tools, errors and retries, cache a
                 security, retrieval components, graph
 data/           synthetic retail documents and CSV/JSON used as the knowledge base
 KNOWN_ISSUES.md the honest list of limits and of what was found and fixed
+CHANGELOG.md    release notes for each version
 ```
 
 `docs/drafts/` holds archived early notes; you don't need to read it.
